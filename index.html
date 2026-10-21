@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#160f16">
+<title>Vesper — Kink Jars</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+</head>
+<body>
+<header>
+  <div class="moon">☾ ✦ ☽</div>
+  <h1>Vesper</h1>
+  <div class="subtitle">um diário de curiosidades & desejos</div>
+</header>
+<main>
+  <section class="toolbar" aria-label="Personalização">
+    <div class="field"><label for="personName">Nome ou apelido</label><input id="personName" type="text" maxlength="36" placeholder="Como vamos te chamar?"></div>
+    <div class="field"><label for="accentColor">Cor dos potes</label><div class="colorrow"><input id="accentColor" type="color" value="#a33b55" aria-label="Escolher cor"><span class="hint">Personalize o líquido e os destaques</span></div></div>
+    <div class="field"><label for="categoryFilter">Categoria</label><select id="categoryFilter"><option value="all">Todas as categorias</option></select></div>
+    <div class="field"><label for="searchBox">Buscar um item</label><input id="searchBox" type="text" placeholder="Ex.: couro, roleplay..."></div>
+  </section>
+  <div class="actions">
+    <button class="primary" id="exportBtn">✧ Criar relatório em imagem</button>
+    <button id="saveBtn">Salvar neste aparelho</button>
+    <button class="quiet" id="loadBtn">Carregar salvo</button>
+    <button class="quiet" id="resetBtn">Recomeçar</button>
+    <div class="stats" id="stats">0 de 100 preenchidos</div>
+  </div>
+  <div class="sectionhead"><div><h2>Seus potes</h2><p>Escolha uma nota de 1 a 5. Deixe vazio se preferir não responder.</p></div></div>
+  <section class="jar-grid" id="jarGrid" aria-live="polite"></section>
+  <footer>VESPER • Feito para explorar preferências com curiosidade, privacidade e consentimento.<br>As respostas ficam neste navegador, salvo se você exportar ou compartilhar o relatório.</footer>
+</main>
+<div class="toast" id="toast"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
